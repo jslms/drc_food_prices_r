@@ -1,0 +1,40 @@
+name: Mise à jour des données PAM
+
+on:
+  schedule:
+    # S'exécute tous les lundis à 2h du matin (UTC)
+    - cron: '0 2 * * 1'
+  workflow_dispatch: # Permet de le lancer manuellement pour tester
+
+permissions:
+  contents: write # Autorise GitHub à faire un commit
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Installer les packages R nécessaires
+        run: |
+          install.packages(c("httr", "tools"))
+        shell: Rscript {0}
+
+      - name: Exécuter le script de mise à jour
+        run: Rscript 03_mise_a_jour_donnees.R
+
+      - name: Commit et Push si changement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add wfp_food_prices_cod.csv
+          # La commande suivante ne fait le commit que si le fichier a changé
+          git diff --staged --quiet || git commit -m "Mise à jour automatique des données PAM"
+          git push
