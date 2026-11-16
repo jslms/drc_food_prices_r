@@ -1,0 +1,5561 @@
+<!DOCTYPE html>
+<html lang="en_AU">
+  <head>
+
+    <script type="application/javascript">
+      /**
+       * A map holding all the information to be sent to the analytics servers
+       * @type {object}
+       */
+      var analyticsInfo = {
+          'organizationName': 'wfp',
+          'organizationId': '3ecac442-7fed-448d-8f78-b385ef6f84e7',
+          'groupNames': ["cod"],
+          'groupIds': ["cod"],
+          'isCod': false,
+          'isIndicator': false,
+          'isArchived': false,
+          'datasetName': 'wfp-food-prices-for-democratic-republic-of-the-congo',
+          'datasetId': '07a6d6fb-828d-4391-afb8-78b1fc32caa3',
+          'pageTitle': 'Democratic Republic of the Congo - Food Prices | Humanitarian Dataset',
+          'datasetAvailability': 'public',
+          'cameFrom': '',
+          'supportsNotifications': 'true',
+          'supportsTabularDataEndpoints': 'false',
+          'authenticated': 'false',
+          'accountType': '',
+      };
+    </script>
+
+    
+        <!-- start Mixpanel -->
+<script type="text/javascript">
+    (function (e, b) {
+        if (!b.__SV) {
+            var a, f, i, g;
+            window.mixpanel = b;
+            b._i = [];
+            b.init = function (a, e, d) {
+                function f(b, h) {
+                    var a = h.split(".");
+                    2 == a.length && (b = b[a[0]], h = a[1]);
+                    b[h] = function () {
+                        b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }
+
+                var c = b;
+                "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                c.people = c.people || [];
+                c.toString = function (b) {
+                    var a = "mixpanel";
+                    "mixpanel" !== d && (a += "." + d);
+                    b || (a += " (stub)");
+                    return a
+                };
+                c.people.toString = function () {
+                    return c.toString(1) + ".people (stub)"
+                };
+                i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                for (g = 0; g < i.length; g++)f(c, i[g]);
+                b._i.push([a, e, d])
+            };
+            b.__SV = 1.2;
+            a = e.createElement("script");
+            a.type = "text/javascript";
+            a.async = !0;
+            a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+            f = e.getElementsByTagName("script")[0];
+            f.parentNode.insertBefore(a, f)
+        }
+    })(document, window.mixpanel || []);
+    mixpanel.init("5cbf12bc9984628fb2c55a49daf32e74");
+
+    var mixpanelTrackData = {
+      "page title": analyticsInfo.pageTitle,
+      "org name": analyticsInfo.organizationName,
+      "org id": analyticsInfo.organizationId,
+      "group names": analyticsInfo.groupNames,
+      "group ids": analyticsInfo.groupIds,
+      "authenticated": analyticsInfo.authenticated,
+      "dataset availability": analyticsInfo.datasetAvailability,
+      "is cod": analyticsInfo.isCod,
+      "is indicator": analyticsInfo.isIndicator,
+      "is archived": analyticsInfo.isArchived,
+      "dataset id": analyticsInfo.datasetId,
+      "dataset name": analyticsInfo.datasetName,
+      "came from": analyticsInfo.cameFrom,
+      "supports notifications": analyticsInfo.supportsNotifications,
+      "supports tabular data endpoints": analyticsInfo.supportsTabularDataEndpoints,
+    };
+
+    if(analyticsInfo.accountType) {
+      mixpanelTrackData['account type'] = analyticsInfo.accountType;
+    }
+
+    mixpanel.track("page view", mixpanelTrackData);
+</script>
+<!-- end Mixpanel -->
+    
+
+    
+      <!-- Google Tag Manager - DATALAYER -->
+      <script type="application/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        <!-- Google Analytics - custom properties (dimensions) -->
+        (function() {
+            if (analyticsInfo.organizationName !== 'None') {
+                dataLayer.push({
+                  'org_name': analyticsInfo.organizationName
+                });
+            }
+
+            
+
+            var locationNames = analyticsInfo.groupNames.length < 15 ? analyticsInfo.groupNames.join('~') : 'many';
+            if (locationNames) {
+                dataLayer.push({
+                  'location_names': locationNames
+                });
+            }
+        }());
+        <!-- END - Google Analytics - custom properties (dimensions) -->
+      </script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MFNPQ7K');</script>
+      <!-- End Google Tag Manager -->
+
+    
+
+    
+    
+    
+    
+  <meta charset="utf-8" />
+
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="Ijc5NzNkM2NiNzBlZDE1N2RjNGJlOWFiN2UxNDcyODI3NjM1M2UxNDki.avrLKg.3kuOqDiWh9ARdw3nOwAPgwNMB5s" />
+
+      <meta name="referrer" content="always">
+      <meta name="generator" content="ckan " />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="hdx-version" content="v3.2.2">
+
+    <meta name="description" content="This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as... Access the Democratic Republic of the Congo - Food Prices dataset to support humanitarian efforts." />
+
+    <title>Democratic Republic of the Congo - Food Prices | Humanitarian Dataset | HDX</title>
+
+    
+
+    <meta property="og:image" content="https://data.humdata.org/images/hdx-social-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://data.humdata.org/images/hdx-social-share.png">
+
+    
+    
+  
+
+
+  
+
+
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="theme-color" content="#1862d8">
+      <link rel="search" type="application/opensearchdescription+xml" title="HDX Search" href="/xml/opensearch.xml">
+    
+
+  
+  
+  
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  
+  
+
+  
+  
+      
+          
+          <link rel="alternate" type="text/n3" href="https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3.n3"/>
+          <link rel="alternate" type="text/turtle" href="https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3.ttl"/>
+          <link rel="alternate" type="application/rdf+xml" href="https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3.xml"/>
+          <link rel="alternate" type="application/ld+json" href="https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3.jsonld?profiles=croissant" title="Croissant ML"/>
+          <link rel="alternate" type="application/ld+json" href="https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3.jsonld?profiles=euro_dcat_ap" title="EURO DCAT-AP"/>
+      
+  
+
+  
+  
+
+
+    
+      
+      
+    
+  <meta property="og:title" content="Democratic Republic of the Congo - Food Prices - Humanitarian Data Exchange">
+  <meta property="og:description" content="This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as...">
+  <script type="application/ld+json">
+    {
+    "@context": {
+        "brick": "https://brickschema.org/schema/Brick#",
+        "csvw": "http://www.w3.org/ns/csvw#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcam": "http://purl.org/dc/dcam/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcmitype": "http://purl.org/dc/dcmitype/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "org": "http://www.w3.org/ns/org#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "time": "http://www.w3.org/2006/time#",
+        "vann": "http://purl.org/vocab/vann/",
+        "void": "http://rdfs.org/ns/void#",
+        "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4",
+            "@type": "schema:DataDownload",
+            "schema:contentUrl": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4/download/wfp_markets_cod.csv",
+            "schema:description": "Markets data",
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Democratic Republic of the Congo - Markets"
+        },
+        {
+            "@id": "https://data.humdata.org/organization/wfp",
+            "@type": "schema:Organization",
+            "schema:contactPoint": [
+                {
+                    "@id": "_:Naff3bcd6cdc84219bb146bf3f38354ab"
+                },
+                {
+                    "@id": "_:Na6f7d09b62ed47de96e55761ca7f64ac"
+                }
+            ],
+            "schema:name": "WFP - World Food Programme",
+            "schema:sameAs": "https://dataviz.vam.wfp.org/"
+        },
+        {
+            "@id": "_:Naff3bcd6cdc84219bb146bf3f38354ab",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
+            "schema:url": "https://data.humdata.org"
+        },
+        {
+            "@id": "_:Na6f7d09b62ed47de96e55761ca7f64ac",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
+            "schema:url": "https://data.humdata.org"
+        },
+        {
+            "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a",
+            "@type": "schema:DataDownload",
+            "schema:contentUrl": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a/download/wfp_food_prices_cod.csv",
+            "schema:description": "Food prices data",
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Democratic Republic of the Congo - Food Prices"
+        },
+        {
+            "@id": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo",
+            "@type": "schema:Dataset",
+            "schema:about": {
+                "@id": "_:Nee20951d0b4e4937944880835a6544b3"
+            },
+            "schema:creator": {
+                "@id": "https://data.humdata.org/organization/wfp"
+            },
+            "schema:dateModified": "2026-11-15T08:44:21.663863",
+            "schema:datePublished": "2018-09-26T15:35:29.879457",
+            "schema:description": "This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as maize, rice, beans, fish, and sugar for 98 countries and some 3000 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.",
+            "schema:distribution": [
+                {
+                    "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a"
+                },
+                {
+                    "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4"
+                }
+            ],
+            "schema:identifier": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo",
+            "schema:includedInDataCatalog": {
+                "@id": "_:Nad7d9875d2024f52991d1d8a13a90554"
+            },
+            "schema:isAccessibleForFree": true,
+            "schema:keywords": [
+                "crisis-ebola-bundibugyo-virus-disease",
+                "economics",
+                "markets",
+                "food security",
+                "indicators"
+            ],
+            "schema:license": "http://creativecommons.org/licenses/by/3.0/igo/legalcode",
+            "schema:name": "Democratic Republic of the Congo - Food Prices",
+            "schema:publisher": {
+                "@id": "https://data.humdata.org/organization/wfp"
+            },
+            "schema:spatialCoverage": "Democratic Republic of the Congo",
+            "schema:temporalCoverage": "2007-01-15T00:00:00/2026-09-15T23:59:59",
+            "schema:url": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo"
+        },
+        {
+            "@id": "_:Nee20951d0b4e4937944880835a6544b3",
+            "@type": "schema:Thing",
+            "schema:name": "cod",
+            "schema:url": "https://data.humdata.org/group/cod"
+        },
+        {
+            "@id": "_:Nad7d9875d2024f52991d1d8a13a90554",
+            "@type": "schema:DataCatalog",
+            "schema:description": "",
+            "schema:name": "Humanitarian Data Exchange",
+            "schema:url": "https://data.humdata.org"
+        }
+    ]
+}
+  </script>
+
+
+    <link rel=preconnect href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="/webassets/ckanext-hdx_theme/1650c0bb_v2-components-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/1b793184_v2-page-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/c2ea7871_v2-dataset-page-styles.css" rel="stylesheet"/>
+    
+  </head>
+
+  
+  <body data-site-root="/" data-locale-root="/" data-api-root="" class="hdx-v2">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFNPQ7K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a href="#hdx-v2-main" class="sr-only sr-only--focusable">Skip to main content</a>
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+<div id="logoutPopup" class="popup popup-onbording" style="display: none;" >
+    <div class="content ">
+        
+            <div class="row">
+                
+                <div class="col-12">
+                    
+    <div class="notification-widget">
+        <div class="notification-title ">
+            
+                You logged out of HDX
+            
+            <i class="close humanitarianicons-Exit-Cancel"></i>
+        </div>
+        <div>
+            <div>
+                
+    <div class="logout-widget">
+        <div class="center">
+            <img class="mTop20 lazyload" data-src="/images/onboarding/logout.png">
+            <div class="mTop30 notification-message">
+                Thank you for using HDX !
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+</div>
+
+    
+
+    
+      
+
+
+
+
+<header class="hdx-v2-header">
+
+  
+  
+  <div class="hdx-v2-top-bar">
+    <div class="hdx-v2-top-bar__inner hdx-v2-container">
+
+      
+      <div class="hdx-v2-top-bar__services">
+        <button class="hdx-v2-top-bar__services-trigger"
+                type="button"
+                data-hdx-v2-panel="services"
+                aria-expanded="false"
+                aria-controls="hdx-v2-panel-services"
+                aria-label="OCHA services">
+          <span class="hdx-v2-top-bar__services-logo" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="none"><use href="/v2/icons/ocha-logo.svg#i"/></svg></span>
+          <span class="hdx-v2-top-bar__services-text">OCHA Services</span>
+          <span class="hdx-v2-top-bar__services-chevron"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+        </button>
+
+        <div class="hdx-v2-top-bar__dropdown" id="hdx-v2-panel-services" role="menu" hidden>
+          <div class="hdx-v2-top-bar__dropdown-grid">
+
+          
+            <div class="hdx-v2-top-bar__dropdown-col">
+              <p class="hdx-v2-top-bar__dropdown-heading">Related Platforms</p>
+              <ul class="hdx-v2-top-bar__dropdown-list">
+                <li>
+                  <a href="https://centre.humdata.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Centre for Humanitarian Data</a>
+                </li>
+              </ul>
+            </div>
+
+          
+            <div class="hdx-v2-top-bar__dropdown-col">
+              <p class="hdx-v2-top-bar__dropdown-heading">Other OCHA Services</p>
+              <ul class="hdx-v2-top-bar__dropdown-list">
+                <li>
+                  <a href="https://cerf.un.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Central Emergency Response Fund</a>
+                </li>
+                <li>
+                  <a href="https://fts.unocha.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Financial Tracking Service</a>
+                </li>
+                <li>
+                  <a href="https://gdacs.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Global Disaster Alert &amp; Coordination System</a>
+                </li>
+                <li>
+                  <a href="https://humanitarianaction.info/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Humanitarian Action</a>
+                </li>
+                <li>
+                  <a href="https://www.insarag.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">International Search and Rescue Advisory</a>
+                </li>
+              </ul>
+            </div>
+
+          
+            <div class="hdx-v2-top-bar__dropdown-col">
+              <p class="hdx-v2-top-bar__dropdown-heading hdx-v2-top-bar__dropdown-heading--empty">&nbsp;</p>
+              <ul class="hdx-v2-top-bar__dropdown-list">
+                <li>
+                  <a href="https://interagencystandingcommittee.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Inter-Agency Standing Committee</a>
+                </li>
+                <li>
+                  <a href="https://pfdata.unocha.org/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">Pooled Funds Data Hub</a>
+                </li>
+                <li>
+                  <a href="https://reliefweb.int/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">ReliefWeb</a>
+                </li>
+                <li>
+                  <a href="https://response.reliefweb.int/" target="_blank" rel="noopener noreferrer"
+                     data-module="hdx_click_stopper" data-module-link_type="header">ReliefWeb Response</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <nav class="hdx-v2-top-bar__nav">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="https://docs.humdata.org/"
+   target="_blank"
+   rel="noopener noreferrer"
+   
+    data-module="hdx_click_stopper" data-module-link_type="header" aria-label="documentation link">Documentation</a>
+      </nav>
+
+    </div>
+  </div>
+  
+
+  
+  <nav class="hdx-v2-navbar"
+       aria-label="Main navigation"
+       >
+    <div class="hdx-v2-navbar__inner hdx-v2-container">
+
+      
+      <a class="hdx-v2-navbar__logo" href="/" aria-label="HDX — Humanitarian Data Exchange"
+         data-module="hdx_click_stopper" data-module-link_type="header">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 121 40" fill="none"><use href="/v2/icons/hdx.svg#i"/></svg>
+      </a>
+
+      
+      
+      
+      
+      <div class="hdx-v2-navbar__search">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="/dataset/" method="get" role="search">
+  <input type="hidden" name="ext_search_source" value="main-nav">
+
+<div class="c-autocomplete"
+     role="combobox"
+     aria-haspopup="listbox"
+     aria-expanded="false"
+     data-hdx-v2-search-autocomplete
+     data-search-source="main-nav">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-search-input c-search-input--size-m"
+      data-search-managed="">
+
+  <input type="search"
+         name="q"
+         
+         placeholder="Search for datasets, locations or organisations"
+         value=""
+         autocomplete="off"
+         >
+
+  
+    <button class="c-search-input__clear" type="button" aria-label="Clear search">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+    
+      
+      <button class="c-search-input__icon c-search-input__icon--btn" type="submit" aria-label="Search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/search.svg#i"/></svg>
+      </button>
+    
+  
+
+</div>
+
+  <div class="c-autocomplete__panel" role="listbox" hidden>
+
+    
+    
+
+    
+    <div class="c-autocomplete__results" data-results-label="Search results">
+      
+    </div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<button
+  type="submit"
+  class="c-button c-button--tertiary c-button--size-m c-autocomplete__confirm-btn"
+  
+  
+  
+  
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">View all results</span>
+
+    
+
+  
+
+
+</button>
+
+
+  </div>
+
+</div>
+</form>
+      </div>
+      
+
+      
+      <div class="hdx-v2-navbar__nav">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-nav-item"
+   href="/dataset/"
+   
+    data-module="hdx_click_stopper" data-module-link_type="main nav">
+
+  <span class="c-nav-item__label">Data</span>
+
+  
+
+</a>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-nav-item"
+   href="/group/"
+   
+    data-module="hdx_click_stopper" data-module-link_type="main nav">
+
+  <span class="c-nav-item__label">Locations</span>
+
+  
+
+</a>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-nav-item"
+   href="/organization/"
+   
+    data-module="hdx_click_stopper" data-module-link_type="main nav">
+
+  <span class="c-nav-item__label">Organisations</span>
+
+  
+
+</a>
+
+        
+        <div class="hdx-v2-navbar__products">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-nav-item"
+   href="#"
+   
+    data-hdx-v2-panel="products" aria-expanded="false" aria-controls="hdx-v2-panel-products">
+
+  <span class="c-nav-item__label">Products</span>
+
+  
+    <span class="c-nav-item__chevron"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+
+</a>
+          <ul class="hdx-v2-navbar__products-panel" id="hdx-v2-panel-products" hidden>
+            
+              <li>
+                <a href="/crisis-pages"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Crisis Pages
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dashboards/overview-of-data-grids"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Data Grids
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dataviz-gallery"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Dataviz Gallery
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://docs.humdata.org/build/hdx-apis/hapi"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Humanitarian API
+                </a>
+              </li>
+            
+              <li>
+                <a href="/signals"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Signals
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dashboards/archived-datasets"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Archived Datasets
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="hdx-v2-navbar__actions">
+        
+        
+        <button class="hdx-v2-navbar__search-icon" type="button"
+                aria-label="Search"
+                aria-expanded="false"
+                aria-controls="hdx-search-autocomplete-overlay"
+                data-action="open-search-overlay">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/search.svg#i"/></svg>
+        </button>
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<a
+  class="c-button c-button--secondary c-button--size-m hdx-v2-navbar__login"
+  href="/sign-in?came_from=/dataset/wfp-food-prices-for-democratic-republic-of-the-congo"
+  
+  
+  
+   data-module="hdx_click_stopper" data-module-link_type="header"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Log in</span>
+
+    
+
+  
+
+
+</a>
+
+        
+
+        
+        <button class="hdx-v2-navbar__hamburger" type="button"
+                aria-label="Open menu"
+                aria-label-close="Close menu"
+                aria-expanded="false"
+                aria-controls="hdx-v2-offcanvas"
+                data-hdx-v2-panel="offcanvas">
+          <span class="hdx-v2-navbar__icon-menu"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/menu.svg#i"/></svg></span>
+          <span class="hdx-v2-navbar__icon-close"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg></span>
+        </button>
+      </div>
+      
+
+    </div>
+  </nav>
+
+  
+  
+  <div class="hdx-v2-offcanvas" id="hdx-v2-offcanvas" aria-hidden="true">
+    <div class="hdx-v2-offcanvas__body">
+
+      
+      <div class="hdx-v2-offcanvas__primary">
+
+        
+        
+
+        
+        <nav class="hdx-v2-offcanvas__nav" aria-label="Mobile navigation">
+          <a class="hdx-v2-offcanvas__nav-item" href="/"
+             data-module="hdx_click_stopper" data-module-link_type="main nav">
+            Home
+          </a>
+          <a class="hdx-v2-offcanvas__nav-item" href="/dataset/"
+             data-module="hdx_click_stopper" data-module-link_type="main nav">
+            Data
+          </a>
+          <a class="hdx-v2-offcanvas__nav-item" href="/group/"
+             data-module="hdx_click_stopper" data-module-link_type="main nav">
+            Locations
+          </a>
+          <a class="hdx-v2-offcanvas__nav-item" href="/organization/"
+             data-module="hdx_click_stopper" data-module-link_type="main nav">
+            Organisations
+          </a>
+
+          
+          <button class="hdx-v2-offcanvas__nav-item hdx-v2-offcanvas__nav-item--expandable"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="offcanvas-products"
+                  data-module="hdx_click_stopper" data-module-link_type="main nav">
+            Products
+            <span class="hdx-v2-offcanvas__expand-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+          </button>
+          <ul class="hdx-v2-offcanvas__subnav" id="offcanvas-products">
+            
+              <li>
+                <a href="/crisis-pages"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Crisis Pages
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dashboards/overview-of-data-grids"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Data Grids
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dataviz-gallery"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Dataviz Gallery
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://docs.humdata.org/build/hdx-apis/hapi"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Humanitarian API
+                </a>
+              </li>
+            
+              <li>
+                <a href="/signals"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Signals
+                </a>
+              </li>
+            
+              <li>
+                <a href="/dashboards/archived-datasets"
+                   
+                   data-module="hdx_click_stopper" data-module-link_type="main nav">
+                  Archived Datasets
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+
+        
+        <div class="hdx-v2-offcanvas__footer">
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a
+  class="c-button c-button--secondary c-button--size-l"
+  href="/sign-in?came_from=/dataset/wfp-food-prices-for-democratic-republic-of-the-congo"
+  
+  
+  
+   data-module="hdx_click_stopper" data-module-link_type="main nav"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Log in</span>
+
+    
+
+  
+
+
+</a>
+
+          
+        </div>
+
+      </div>
+
+      
+      
+
+    </div>
+  </div>
+
+  
+  <div class="hdx-v2-offcanvas__backdrop" hidden data-hdx-v2-close="offcanvas"></div>
+
+  
+  
+  
+  
+  <div class="hdx-v2-search-filter-overlay" id="hdx-search-autocomplete-overlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="hdx-v2-search-filter-overlay__header">
+      <span class="hdx-v2-search-filter-overlay__title">Search</span>
+      <button type="button"
+              class="hdx-v2-search-filter-overlay__close"
+              data-action="close-search-overlay"
+              aria-label="Close search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+      </button>
+    </div>
+
+    <div class="hdx-v2-search-filter-overlay__body">
+      <form class="hdx-v2-search-filter-overlay__form"
+            id="hdx-search-overlay-form"
+            action="/dataset/"
+            method="get"
+            role="search">
+        <input type="hidden" name="ext_search_source" value="main-nav">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-search-input c-search-input--size-l"
+      data-search-managed="">
+
+  <input type="search"
+         name="q"
+         id="hdx-search-overlay-input"
+         placeholder="Search for datasets, locations or organisations"
+         value=""
+         autocomplete="off"
+         >
+
+  
+    <button class="c-search-input__clear" type="button" aria-label="Clear search">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+    
+      
+      <button class="c-search-input__icon c-search-input__icon--btn" type="submit" aria-label="Search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/search.svg#i"/></svg>
+      </button>
+    
+  
+
+</div>
+
+        <div class="hdx-v2-search-filter-overlay__results c-autocomplete__results"
+             role="listbox"
+             aria-label="Search suggestions">
+        </div>
+      </form>
+    </div>
+
+    <div class="hdx-v2-search-filter-overlay__footer">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--tertiary c-button--size-l is-disabled"
+  
+  disabled aria-disabled="true"
+  
+   data-action="clear-search-overlay"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Clear</span>
+
+    
+
+  
+
+
+</button>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="submit"
+  class="c-button c-button--primary c-button--size-l"
+  
+  
+  
+   form="hdx-search-overlay-form"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">View all results</span>
+
+    
+
+  
+
+
+</button>
+
+    </div>
+
+  </div>
+  
+
+</header>
+    
+  
+    <div role="main" id="hdx-v2-main">
+      <div id="content">
+        
+          <div class="hdx-v2-breadcrumb-row">
+            <div class="hdx-v2-container">
+              
+  
+
+
+
+
+
+
+
+<nav class="c-breadcrumb"
+     aria-label="Breadcrumb"
+     vocab="https://schema.org/"
+     typeof="BreadcrumbList">
+
+  
+    
+    
+
+    <span class="c-breadcrumb__item"
+          property="itemListElement"
+          typeof="ListItem">
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--tertiary c-text-link--size-xs"
+   href="/"
+   
+   
+   
+    property="item" typeof="WebPage"><span  property="name">Home</span></a>
+      
+
+      <meta property="position" content="1">
+
+      
+        <span class="c-breadcrumb__separator" aria-hidden="true">/</span>
+      
+
+    </span>
+  
+    
+    
+
+    <span class="c-breadcrumb__item"
+          property="itemListElement"
+          typeof="ListItem">
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--tertiary c-text-link--size-xs"
+   href="/organization/wfp"
+   
+   
+   
+    property="item" typeof="WebPage"><span  property="name">WFP - World Food Programme</span></a>
+      
+
+      <meta property="position" content="2">
+
+      
+        <span class="c-breadcrumb__separator" aria-hidden="true">/</span>
+      
+
+    </span>
+  
+    
+    
+
+    <span class="c-breadcrumb__item"
+          property="itemListElement"
+          typeof="ListItem">
+
+      
+        <span class="c-breadcrumb__current"
+              property="name">Democratic Republic of the Congo - Food Prices</span>
+      
+
+      <meta property="position" content="3">
+
+      
+
+    </span>
+  
+
+</nav>
+
+            </div>
+          </div>
+        
+
+        
+          <div class="flash-messages">
+            <div class="hdx-v2-container">
+              
+                
+                
+              
+            </div>
+          </div>
+        
+
+        
+          
+          <div class="">
+            
+            
+              
+  <div class="hdx-v2-page-header-section">
+    <div class="hdx-v2-container">
+  
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="c-page-header">
+
+  
+  <div class="c-page-header__top">
+
+    <div class="c-page-header__left">
+      <div class="c-page-header__description">
+
+        
+        
+
+        
+        
+        <div class="c-page-header__labels">
+
+          
+
+          
+
+          
+
+          
+
+          
+            <div class="c-page-header__link-group">
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c-label c-label--grey c-label--size-s"
+      >
+
+
+  
+
+  
+    <span class="c-label__text">Part of the </span>
+  
+
+</span>
+              
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  href="https://data.humdata.org/group/cod"
+  
+   target="_self"
+>
+
+
+  
+
+  <span class="c-text-button__label">Democratic Republic of the Congo Data Grid</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/arrow-right.svg#i"/></svg></span>
+  
+  
+
+
+</a>
+
+            </div>
+          
+
+          
+            <div class="c-page-header__link-group">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c-label c-label--grey c-label--size-s"
+      >
+
+
+  
+
+  
+    <span class="c-label__text">Part of Ebola Bundibugyo Virus Disease Crisis</span>
+  
+
+</span>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  href="/event/crisis-ebola-bundibugyo-virus-disease"
+  
+  
+>
+
+
+  
+
+  <span class="c-text-button__label">View crisis page</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/arrow-right.svg#i"/></svg></span>
+  
+  
+
+
+</a>
+
+            </div>
+          
+
+        </div>
+        
+
+        
+        
+          
+          
+            
+            <h1 class="c-page-header__title"
+                >Democratic Republic of the Congo - Food Prices</h1>
+          
+          
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+        <div class="c-page-header__desc"
+             data-module="clamped-text"
+             >
+          <div class="c-page-header__desc-text" data-clamped-content><p>This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as maize, rice, beans, fish, and sugar for 98 countries and some 3000 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.</p></div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+        </div>
+        
+
+        
+        
+
+      </div>
+      
+
+      
+      
+      <div class="c-page-header__cta">
+        
+          
+
+
+
+
+<div class="notification-platform-wrapper">
+
+
+  <div class="notification-platform-opt-in-action-menu" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-button c-button--primary c-button--size-m"
+  href="#"
+  
+  
+  
+  
+>
+
+
+  
+  
+
+    
+      
+    <span class="c-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/bell.svg#i"/></svg></span>
+  
+    
+
+    <span class="c-button__label">Get Notified</span>
+
+    
+
+  
+
+
+</a>
+
+  </div>
+
+
+  <div class="notification-platform-opt-out-action-menu" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-button c-button--secondary c-button--size-m"
+  href="#"
+  
+  
+  
+  
+>
+
+
+  
+  
+
+    
+      
+    <span class="c-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/bell.svg#i"/></svg></span>
+  
+    
+
+    <span class="c-button__label">Unsubscribe</span>
+
+    
+
+  
+
+
+</a>
+
+  </div>
+
+</div>
+        
+        
+          <div class="c-page-header__downloads">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/trend-up.svg#i"/></svg>
+            <span>4500 downloads</span>
+          </div>
+        
+      </div>
+      
+
+    </div>
+    
+
+    
+    
+    <div class="c-page-header__right-card">
+      
+        
+          <a class="c-page-header__logo-link mx-ga-dimension-organization" href="/organization/3ecac442-7fed-448d-8f78-b385ef6f84e7">
+            <img class="c-page-header__logo" src="/image/2026-09-15-072425.336653wfp_logo_final.png" alt="WFP - World Food Programme">
+          </a>
+        
+      
+      
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-text-button c-text-button--tertiary c-text-button--size-m"
+  href="/sign-in?came_from=/dataset/wfp-food-prices-for-democratic-republic-of-the-congo/contact/&amp;info_message_type=contact-contributor"
+  
+   id="contact-the-contributor"
+>
+
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/mail.svg#i"/></svg></span>
+  
+  
+
+  <span class="c-text-button__label">Contact the contributor</span>
+
+  
+
+
+</a>
+
+        
+        
+        
+      
+      
+      
+    </div>
+    
+
+  </div>
+  
+
+  
+  
+
+  
+  
+  <hr class="c-divider">
+  <div class="c-page-header__metadata">
+
+    
+    <div class="c-page-header__meta-item">
+      <div class="c-page-header__meta-label-row">
+        <span class="c-page-header__meta-label">Location</span>
+        
+        
+        
+      </div>
+      <div class="c-page-header__meta-value">
+        <span>Democratic Republic of the Congo</span>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="c-label c-label--cyan c-label--size-xs"
+      >
+
+
+  
+
+  
+    <span class="c-label__text">Sub-national</span>
+  
+
+</span>
+        
+      </div>
+    </div>
+    
+    <div class="c-page-header__meta-item">
+      <div class="c-page-header__meta-label-row">
+        <span class="c-page-header__meta-label">Expected update frequency</span>
+        
+        
+        
+      </div>
+      <div class="c-page-header__meta-value">
+        <span>Every month</span>
+        
+      </div>
+    </div>
+    
+    <div class="c-page-header__meta-item">
+      <div class="c-page-header__meta-label-row">
+        <span class="c-page-header__meta-label">Time period</span>
+        
+        
+        
+          
+
+
+
+
+
+
+
+<div class="c-tooltip-anchor">
+  <button type="button"
+          class="c-info-icon c-tooltip-trigger"
+          aria-label="More info about time period"
+          aria-expanded="false"
+          aria-describedby="tooltip-time-period">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/info-circle.svg#i"/></svg>
+  </button>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-tooltip c-tooltip--dark"
+     role="tooltip"
+     id="tooltip-time-period">
+
+  
+  
+
+    <span class="c-tooltip__text">The earliest start date and latest end date across all resources included in the dataset.</span>
+
+    
+
+  
+  
+
+</div>
+  
+</div>
+        
+      </div>
+      <div class="c-page-header__meta-value">
+        <span>15 January 2007 - 15 September 2026</span>
+        
+      </div>
+    </div>
+    
+    <div class="c-page-header__meta-item" data-header-meta-overflow>
+      <div class="c-page-header__meta-label-row">
+        <span class="c-page-header__meta-label">Source</span>
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-text-button c-text-button--tertiary c-text-button--size-s c-page-header__meta-view-more"
+  href="#metadata-source"
+  
+  
+>
+
+
+  
+
+  <span class="c-text-button__label">View more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/arrow-down.svg#i"/></svg></span>
+  
+  
+
+
+</a>
+
+        
+        
+      </div>
+      <div class="c-page-header__meta-value c-page-header__meta-value--truncate">
+        <span>Country Office_Kinshasa, FAO, DRC Ministry of Agriculture via FAO: GIEWS, FPMA, GB_Gbadolite, Institut National de la Statistique(INS), Katanga, MINAGRI, Ministry of agriculture, P4P, PAM, WFP Sub offices: SB-Kabalo, SB-Kindu, SB-Mbandaka, SB-Moba, SB-Uvira, SB_Kasai, Sub office Bukavu, Sub office Bunia, Sub office Gbadolite, Sub office Goma, Sub office Kalemie, Sub office Kananga, Sub office Lubumbashi, Sub office Tshikapa, VAM via FAO: GIEWS, VAM-M&amp;E, WFP</span>
+        
+      </div>
+    </div>
+    
+
+  </div>
+  
+
+</section>
+
+
+
+  
+    </div>
+  </div>
+
+            
+
+            <div class="hdx-v2-page-row hdx-v2-dataset-row">
+              <div class="hdx-v2-container">
+                <div class="hdx-v2-content-columns hdx-v2-content-columns--gap-xl">
+                  
+                    <div class="hdx-v2-content-columns__sidebar hdx-v2-content-columns__sidebar--xl-only hdx-v2-dataset-sidebar">
+                      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-anchor-links-wrapper">
+  
+    <p class="c-anchor-links__heading">Dataset details</p>
+  
+
+  <nav class="c-anchor-links"
+       aria-label="Page sections">
+    
+      
+      <a class="c-anchor-links__item c-anchor-links__item--active"
+         href="#data-and-resources"
+         aria-current="true"
+         >
+        <span class="c-anchor-links__border" aria-hidden="true"></span>
+        <div class="c-anchor-links__content">
+          <span class="c-anchor-links__label">Data and resources</span>
+          
+        </div>
+      </a>
+    
+      
+      <a class="c-anchor-links__item c-anchor-links__item--inactive"
+         href="#metadata"
+         
+         >
+        <span class="c-anchor-links__border" aria-hidden="true"></span>
+        <div class="c-anchor-links__content">
+          <span class="c-anchor-links__label">Metadata</span>
+          
+        </div>
+      </a>
+    
+      
+      <a class="c-anchor-links__item c-anchor-links__item--inactive"
+         href="#showcases"
+         
+         >
+        <span class="c-anchor-links__border" aria-hidden="true"></span>
+        <div class="c-anchor-links__content">
+          <span class="c-anchor-links__label">Showcases</span>
+          
+        </div>
+      </a>
+    
+      
+      <a class="c-anchor-links__item c-anchor-links__item--inactive"
+         href="#activity"
+         
+         >
+        <span class="c-anchor-links__border" aria-hidden="true"></span>
+        <div class="c-anchor-links__content">
+          <span class="c-anchor-links__label">Activity</span>
+          
+        </div>
+      </a>
+    
+  </nav>
+</div>
+
+
+
+
+
+
+                    </div>
+                  
+                  <div class="hdx-v2-content-columns__content">
+                    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="c-anchor-links-mobile"
+       data-module="anchor-dropdown">
+    <button class="c-anchor-links-mobile__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="anchor-dropdown-panel">
+      <span class="c-anchor-links-mobile__label">Data and resources</span>
+      <span class="c-anchor-links-mobile__chevron" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+    </button>
+    <ul class="c-anchor-links-mobile__panel"
+        id="anchor-dropdown-panel"
+        hidden>
+      
+        <li>
+          <a class="c-anchor-links-mobile__item is-active"
+             href="#data-and-resources"
+             >Data and resources</a>
+        </li>
+      
+        <li>
+          <a class="c-anchor-links-mobile__item"
+             href="#metadata"
+             >Metadata</a>
+        </li>
+      
+        <li>
+          <a class="c-anchor-links-mobile__item"
+             href="#showcases"
+             >Showcases</a>
+        </li>
+      
+        <li>
+          <a class="c-anchor-links-mobile__item"
+             href="#activity"
+             >Activity</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+  
+  
+
+  
+  <section class="hdx-v2-dataset-section" id="data-and-resources">
+    <div class="hdx-v2-dataset-section__header">
+      <div class="hdx-v2-dataset-section__title-row">
+        <div class="hdx-v2-dataset-section__left">
+          <h2 class="hdx-v2-dataset-section__title">Data and resources</h2>
+          
+            <span class="hdx-v2-dataset-section__count">2</span>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="hdx-v2-dataset-section__body">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dataUseSurveyPopup" class="popup popup-onbording" style="display: none;" >
+    <div class="content ">
+        
+            <div class="row">
+                
+                <div class="col-12">
+                    
+    <div class="notification-widget">
+        <div class="notification-title ">
+            
+                HDX Data Use Survey
+            
+            <i class="close humanitarianicons-Exit-Cancel"></i>
+        </div>
+        <div>
+            <div>
+                
+  <div class="survey-widget">
+    <div class="survey-content">
+      <div class="center">
+      <div style="text-align: justify;">
+        
+        Please take 30 seconds to help HDX and WFP - World Food Programme understand your interest in this data.
+      </div>
+    </div>
+      <div class="right-side-actions">
+        <div id="dataUseSurveyPkgId" style="visibility:hidden;position:absolute;">07a6d6fb-828d-4391-afb8-78b1fc32caa3</div>
+        <div id="dataUseSurveyPkgUrl" style="visibility:hidden;position:absolute;">https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo</div>
+        <div id="dataUseSurveyOrgName" style="visibility:hidden;position:absolute;">wfp</div>
+        <input class="btn btn-empty btn-empty-black btn-large float-start" type="button" onclick="closeCurrentWidget(this);" value="Not now">
+        <a href="#"  class="mL35 btn btn-primary btn-primary-small btn-large float-end" type="button" value="Take survey">Take the survey</a>
+      </div>
+    </div>
+    <iframe style="display: none;"></iframe>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+<div id="dataset-resources" class="resources mTop35 info-wrapper">
+  <div class="requested-data-message"></div>
+  
+    
+      
+      <div class="resource-list c-resource-card-list">
+        
+          
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="resource-item"
+     data-grouping-id=""
+     style="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-resource-card" data-module="clamped-text">
+
+  
+  <div class="c-resource-card__header">
+
+    
+    <div class="c-resource-card__top">
+
+      
+      <div class="c-resource-card__file-type">
+        
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+<span class="c-file-type c-file-type--tabular c-file-type--size-m"
+      role="img" aria-label="CSV">
+  <span class="c-file-type__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/view-table.svg#i"/></svg></span>
+</span>
+        
+          <span class="c-resource-card__format-text">CSV</span>
+        
+      </div>
+      
+
+      
+
+    </div>
+
+    
+    
+      <a class="c-resource-card__title" href="/dataset/wfp-food-prices-for-democratic-republic-of-the-congo/resource/c9906fd4-9947-450a-b816-682907463f2a" title="Democratic Republic of the Congo - Food Prices">Democratic Republic of the Congo - Food Prices</a>
+    
+
+    
+    
+      <div class="c-resource-card__desc">
+        <div class="c-resource-card__desc-text" data-clamped-content><p>Food prices data</p></div>
+      </div>
+    
+
+  </div>
+
+  
+  <div class="c-resource-card__footer">
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-m"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+    
+
+    <div class="c-resource-card__actions">
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a
+  class="c-button c-button--tertiary c-button--size-m"
+  href="/dataset/wfp-food-prices-for-democratic-republic-of-the-congo/resource/c9906fd4-9947-450a-b816-682907463f2a"
+  
+  
+  
+  
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">More information</span>
+
+    
+
+  
+
+
+</a>
+
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-button c-button--primary c-button--size-m resource-url-analytics ga-download resource-download-button"
+  href="/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a/download/wfp_food_prices_cod.csv"
+  
+  
+  
+   target="_blank" data-resource-id="c9906fd4-9947-450a-b816-682907463f2a" data-resource-name="Democratic Republic of the Congo - Food Prices" data-dataset-id="07a6d6fb-828d-4391-afb8-78b1fc32caa3" data-dataset-name="wfp-food-prices-for-democratic-republic-of-the-congo" data-dataset-supports-notifications="true" data-is-authenticated="False" tracking-type="upload"
+>
+
+
+  
+  
+
+    
+      
+    <span class="c-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/download.svg#i"/></svg></span>
+  
+    
+
+    <span class="c-button__label">Download (11.8M)</span>
+
+    
+
+  
+
+
+</a>
+
+      
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+</div>
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="resource-item"
+     data-grouping-id=""
+     style="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-resource-card" data-module="clamped-text">
+
+  
+  <div class="c-resource-card__header">
+
+    
+    <div class="c-resource-card__top">
+
+      
+      <div class="c-resource-card__file-type">
+        
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+<span class="c-file-type c-file-type--tabular c-file-type--size-m"
+      role="img" aria-label="CSV">
+  <span class="c-file-type__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/view-table.svg#i"/></svg></span>
+</span>
+        
+          <span class="c-resource-card__format-text">CSV</span>
+        
+      </div>
+      
+
+      
+
+    </div>
+
+    
+    
+      <a class="c-resource-card__title" href="/dataset/wfp-food-prices-for-democratic-republic-of-the-congo/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4" title="Democratic Republic of the Congo - Markets">Democratic Republic of the Congo - Markets</a>
+    
+
+    
+    
+      <div class="c-resource-card__desc">
+        <div class="c-resource-card__desc-text" data-clamped-content><p>Markets data</p></div>
+      </div>
+    
+
+  </div>
+
+  
+  <div class="c-resource-card__footer">
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-m"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+    
+
+    <div class="c-resource-card__actions">
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a
+  class="c-button c-button--tertiary c-button--size-m"
+  href="/dataset/wfp-food-prices-for-democratic-republic-of-the-congo/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4"
+  
+  
+  
+  
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">More information</span>
+
+    
+
+  
+
+
+</a>
+
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-button c-button--primary c-button--size-m resource-url-analytics ga-download resource-download-button"
+  href="/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/a8b7d1d8-701d-467a-98d1-95b402d4d0e4/download/wfp_markets_cod.csv"
+  
+  
+  
+   target="_blank" data-resource-id="a8b7d1d8-701d-467a-98d1-95b402d4d0e4" data-resource-name="Democratic Republic of the Congo - Markets" data-dataset-id="07a6d6fb-828d-4391-afb8-78b1fc32caa3" data-dataset-name="wfp-food-prices-for-democratic-republic-of-the-congo" data-dataset-supports-notifications="true" data-is-authenticated="False" tracking-type="upload"
+>
+
+
+  
+  
+
+    
+      
+    <span class="c-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/download.svg#i"/></svg></span>
+  
+    
+
+    <span class="c-button__label">Download (21.9K)</span>
+
+    
+
+  
+
+
+</a>
+
+      
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+</div>
+          
+        
+      </div>
+    
+
+    
+</div>
+    </div>
+  </section>
+
+  
+  
+
+  
+  <hr class="c-divider">
+  <section class="hdx-v2-dataset-section hdx-v2-dataset-section--collapsible is-open"
+           id="metadata">
+    <div class="hdx-v2-dataset-section__header"
+         role="button" tabindex="0"
+         aria-expanded="true" aria-controls="metadata-body">
+      <h2 class="hdx-v2-dataset-section__title">Metadata</h2>
+      <span class="hdx-v2-dataset-section__chevron" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+    </div>
+    <div class="hdx-v2-dataset-section__body" id="metadata-body">
+      
+
+      <div class="hdx-v2-dataset-metadata">
+
+        
+        <div class="hdx-v2-dataset-metadata__grid">
+
+          <div class="hdx-v2-dataset-metadata__cell"
+               >
+            <div class="hdx-v2-dataset-metadata__label-row">
+              <span class="hdx-v2-dataset-metadata__label">Time period</span>
+              
+
+
+
+
+
+
+
+<div class="c-tooltip-anchor">
+  <button type="button"
+          class="c-info-icon c-tooltip-trigger"
+          aria-label="More info about time period"
+          aria-expanded="false"
+          aria-describedby="tooltip-md-time-period">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/info-circle.svg#i"/></svg>
+  </button>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-tooltip c-tooltip--dark"
+     role="tooltip"
+     id="tooltip-md-time-period">
+
+  
+  
+
+    <span class="c-tooltip__text">The earliest start date and latest end date across all resources included in the dataset.</span>
+
+    
+
+  
+  
+
+</div>
+  
+</div>
+            </div>
+            <span class="hdx-v2-dataset-metadata__value">
+              15 January 2007 - 15 September 2026
+            </span>
+          </div>
+
+          <div class="hdx-v2-dataset-metadata__cell"
+               >
+            <span class="hdx-v2-dataset-metadata__label">Expected update frequency</span>
+            <span class="hdx-v2-dataset-metadata__value">
+              Every month
+            </span>
+          </div>
+
+          <div class="hdx-v2-dataset-metadata__cell">
+            <div class="hdx-v2-dataset-metadata__label-row">
+              <span class="hdx-v2-dataset-metadata__label">Modified</span>
+              
+
+
+
+
+
+
+
+<div class="c-tooltip-anchor">
+  <button type="button"
+          class="c-info-icon c-tooltip-trigger"
+          aria-label="More info about modified date"
+          aria-expanded="false"
+          aria-describedby="tooltip-md-modified">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/info-circle.svg#i"/></svg>
+  </button>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-tooltip c-tooltip--dark"
+     role="tooltip"
+     id="tooltip-md-modified">
+
+  
+  
+
+    <span class="c-tooltip__text">The date of the most recent change to any data or metadata.</span>
+
+    
+
+  
+  
+
+</div>
+  
+</div>
+            </div>
+            <span class="hdx-v2-dataset-metadata__value">
+              04 November 2026
+            </span>
+          </div>
+
+        </div>
+
+        
+        <div class="hdx-v2-dataset-metadata__grid">
+
+          <div class="hdx-v2-dataset-metadata__cell"
+               >
+            <span class="hdx-v2-dataset-metadata__label">Contributor</span>
+            <div class="hdx-v2-dataset-metadata__value">
+              
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--secondary c-text-link--size-m mx-ga-dimension-organization"
+   href="/organization/3ecac442-7fed-448d-8f78-b385ef6f84e7"
+   
+   
+   
+   >WFP - World Food Programme</a>
+              
+            </div>
+          </div>
+
+          <div class="hdx-v2-dataset-metadata__cell" id="metadata-source"
+               data-module="clamped-text"
+               >
+            <span class="hdx-v2-dataset-metadata__label">Source</span>
+            <span class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--clamped" data-clamped-content>Country Office_Kinshasa, FAO, DRC Ministry of Agriculture via FAO: GIEWS, FPMA, GB_Gbadolite, Institut National de la Statistique(INS), Katanga, MINAGRI, Ministry of agriculture, P4P, PAM, WFP Sub offices: SB-Kabalo, SB-Kindu, SB-Mbandaka, SB-Moba, SB-Uvira, SB_Kasai, Sub office Bukavu, Sub office Bunia, Sub office Gbadolite, Sub office Goma, Sub office Kalemie, Sub office Kananga, Sub office Lubumbashi, Sub office Tshikapa, VAM via FAO: GIEWS, VAM-M&amp;E, WFP</span>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+          </div>
+
+          <div class="hdx-v2-dataset-metadata__cell">
+            <div class="hdx-v2-dataset-metadata__label-row">
+              <span class="hdx-v2-dataset-metadata__label">Dataset added on HDX</span>
+              
+
+
+
+
+
+
+
+<div class="c-tooltip-anchor">
+  <button type="button"
+          class="c-info-icon c-tooltip-trigger"
+          aria-label="More info about when dataset was added"
+          aria-expanded="false"
+          aria-describedby="tooltip-md-added">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/info-circle.svg#i"/></svg>
+  </button>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-tooltip c-tooltip--dark"
+     role="tooltip"
+     id="tooltip-md-added">
+
+  
+  
+
+    <span class="c-tooltip__text">The date when the dataset was first added to HDX.</span>
+
+    
+
+  
+  
+
+</div>
+  
+</div>
+            </div>
+            <span class="hdx-v2-dataset-metadata__value">
+              26 September 2018
+            </span>
+          </div>
+
+          <div class="hdx-v2-dataset-metadata__cell">
+            <div class="hdx-v2-dataset-metadata__label-row">
+              <span class="hdx-v2-dataset-metadata__label">Dataset ID</span>
+              
+
+
+
+
+
+
+
+<button type="button"
+        class="c-copy-button c-copy-button--secondary c-copy-button--size-s c-copy-button--icon-left"
+        data-copy-value="07a6d6fb-828d-4391-afb8-78b1fc32caa3"
+        aria-label="Copy">
+  
+    <span class="c-copy-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/copy.svg#i"/></svg></span>
+
+  
+  <span class="c-copy-button__label">Copy</span>
+  <span class="sr-only" aria-live="polite" data-copy-status></span>
+</button>
+            </div>
+            <span class="hdx-v2-dataset-metadata__value">07a6d6fb-828d-4391-afb8-78b1fc32caa3</span>
+          </div>
+
+        </div>
+
+        
+        <div class="hdx-v2-dataset-metadata__full" id="metadata-location"
+             data-module="clamped-text"
+             >
+          <span class="hdx-v2-dataset-metadata__label">Location</span>
+          <div class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--locations hdx-v2-dataset-metadata__value--clamped" data-clamped-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--secondary c-text-link--size-m"
+   href="/group/cod"
+   
+   
+   
+   >Democratic Republic of the Congo</a>
+            
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+        </div>
+
+        
+        <div class="hdx-v2-dataset-metadata__full"
+             data-module="clamped-text"
+             >
+          <span class="hdx-v2-dataset-metadata__label">Methodology</span>
+          
+          <div class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--clamped" data-clamped-content>
+            
+              Registry
+            
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+        </div>
+
+        
+        <div class="hdx-v2-dataset-metadata__full"
+             data-module="clamped-text"
+             >
+          <span class="hdx-v2-dataset-metadata__label">Caveats / Comments</span>
+          <div class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--clamped" data-clamped-content>
+            <p>Although the frequency of updates is set to every month, updates may occur more or less frequently</p>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+        </div>
+
+        
+        
+          <div class="hdx-v2-dataset-metadata__full"
+               data-module="clamped-text"
+               >
+            <span class="hdx-v2-dataset-metadata__label">License</span>
+            <div class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--clamped" data-clamped-content>
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--secondary c-text-link--size-m"
+   href="https://docs.humdata.org/about/data-licenses"
+   
+   
+   
+    property="dc:rights">Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)</a>
+                
+              
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<button
+  type="button"
+  class="c-text-button c-text-button--tertiary c-text-button--size-s"
+  
+   data-clamped-toggle=""
+>
+
+
+  
+
+  <span class="c-text-button__label">Show more</span>
+
+  
+    
+    <span class="c-text-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+  
+  
+
+
+</button>
+
+          </div>
+        
+
+        
+        
+
+        
+        
+        <div class="hdx-v2-dataset-metadata__full"
+             >
+          <span class="hdx-v2-dataset-metadata__label">Tags</span>
+          <div class="hdx-v2-dataset-metadata__value hdx-v2-dataset-metadata__value--tags">
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-label c-label--light c-label--size-m"
+   href="/dataset/?vocab_Topics=crisis-ebola-bundibugyo-virus-disease"
+   >
+
+
+  
+
+  
+    <span class="c-label__text">crisis-ebola-bundibugyo-virus-disease</span>
+  
+
+</a>
+
+              
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-label c-label--light c-label--size-m"
+   href="/dataset/?vocab_Topics=economics"
+   >
+
+
+  
+
+  
+    <span class="c-label__text">economics</span>
+  
+
+</a>
+
+              
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-label c-label--light c-label--size-m"
+   href="/dataset/?vocab_Topics=food+security"
+   >
+
+
+  
+
+  
+    <span class="c-label__text">food security</span>
+  
+
+</a>
+
+              
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-label c-label--light c-label--size-m"
+   href="/dataset/?vocab_Topics=indicators"
+   >
+
+
+  
+
+  
+    <span class="c-label__text">indicators</span>
+  
+
+</a>
+
+              
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-label c-label--light c-label--size-m"
+   href="/dataset/?vocab_Topics=markets"
+   >
+
+
+  
+
+  
+    <span class="c-label__text">markets</span>
+  
+
+</a>
+
+              
+            
+          </div>
+        </div>
+        
+
+        
+        
+          
+            <div class="hdx-v2-dataset-metadata__full">
+              <span class="hdx-v2-dataset-metadata__label">Visibility</span>
+              <div class="hdx-v2-dataset-metadata__value">
+                <div id="private_block">
+                  <span id="visibility">Public</span>
+                </div>
+              </div>
+            </div>
+          
+        
+
+        
+        
+          <div class="hdx-v2-dataset-metadata__full hdx-v2-dataset-metadata__downloads">
+            <div id="dataset-downloads-data" class="d-none">
+              [{&#34;value&#34;: 8, &#34;date&#34;: &#34;2026-05-25&#34;}, {&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-01&#34;}, {&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-08&#34;}, {&#34;value&#34;: 13, &#34;date&#34;: &#34;2026-06-15&#34;}, {&#34;value&#34;: 22, &#34;date&#34;: &#34;2026-06-22&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-06-29&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-07-06&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-13&#34;}, {&#34;value&#34;: 31, &#34;date&#34;: &#34;2026-07-20&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-27&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-03&#34;}, {&#34;value&#34;: 44, &#34;date&#34;: &#34;2026-08-10&#34;}, {&#34;value&#34;: 50, &#34;date&#34;: &#34;2026-08-17&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-24&#34;}, {&#34;value&#34;: 68, &#34;date&#34;: &#34;2026-08-31&#34;}, {&#34;value&#34;: 62, &#34;date&#34;: &#34;2026-09-07&#34;}, {&#34;value&#34;: 79, &#34;date&#34;: &#34;2026-09-14&#34;}, {&#34;value&#34;: 66, &#34;date&#34;: &#34;2026-09-21&#34;}, {&#34;value&#34;: 92, &#34;date&#34;: &#34;2026-09-28&#34;}, {&#34;value&#34;: 154, &#34;date&#34;: &#34;2026-10-05&#34;}, {&#34;value&#34;: 145, &#34;date&#34;: &#34;2026-10-12&#34;}, {&#34;value&#34;: 161, &#34;date&#34;: &#34;2026-10-19&#34;}, {&#34;value&#34;: 169, &#34;date&#34;: &#34;2026-10-26&#34;}, {&#34;value&#34;: 108, &#34;date&#34;: &#34;2026-11-02&#34;}, {&#34;value&#34;: 225, &#34;date&#34;: &#34;2026-11-09&#34;}]
+            </div>
+            <span class="hdx-v2-dataset-metadata__label">Downloads</span>
+            <div id="dataset-downloads-chart">
+              <div id="dataset-downloads-chart-no-data" class="hdx-v2-dataset-metadata__no-data">
+                <div>No download data available</div>
+              </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-tooltip c-tooltip--graph hdx-v2-chart-tooltip"
+     role="tooltip"
+     >
+
+  
+  
+
+    <span class="c-tooltip__text"></span>
+
+    
+      <div class="c-tooltip__legend">
+        
+          <div class="c-tooltip__legend-row">
+            <div class="c-tooltip__legend-key">
+              <span class="c-tooltip__legend-swatch"
+                    style="background-color: var(--hdx-primary-5);"></span>
+              <span class="c-tooltip__legend-label">Downloads</span>
+            </div>
+            <span class="c-tooltip__legend-value"></span>
+          </div>
+        
+      </div>
+    
+
+    
+      <span class="c-tooltip__arrow c-tooltip__arrow--below"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 8" fill="none"><use href="/v2/icons/below.svg#i"/></svg></span>
+    
+
+  
+
+</div>
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+  
+  
+    <hr class="c-divider">
+    <section class="hdx-v2-dataset-section hdx-v2-dataset-section--collapsible is-open"
+             id="showcases">
+      <div class="hdx-v2-dataset-section__header"
+           role="button" tabindex="0"
+           aria-expanded="true" aria-controls="showcases-body">
+        <h2 class="hdx-v2-dataset-section__title">Showcases</h2>
+        <span class="hdx-v2-dataset-section__chevron" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+      </div>
+      <div class="hdx-v2-dataset-section__body" id="showcases-body">
+        <div class="c-showcase-card-grid">
+          
+            
+
+
+
+
+
+
+
+
+<div class="c-showcase-card">
+
+  <div class="c-showcase-card__image">
+    
+      <img class="c-showcase-card__img lazyload"
+           data-src="https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-wfp-foodprices/main/images/overview-image.jpg"
+           src="https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-wfp-foodprices/main/images/overview-image.jpg"
+           alt="Democratic Republic of the Congo - Food Prices showcase">
+    
+  </div>
+
+  <div class="c-showcase-card__body">
+    <span class="c-showcase-card__title">Democratic Republic of the Congo - Food Prices showcase</span>
+    
+      <p class="c-showcase-card__desc">Democratic Republic of the Congo food prices data from World Food Programme displayed through VAM Economic Explorer</p>
+    
+    <div class="c-showcase-card__actions">
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<a
+  class="c-button c-button--secondary c-button--size-m"
+  href="https://dataviz.vam.wfp.org/southern-africa/democratic-republic-of-the-congo/overview"
+  
+  
+  
+   target="_blank" rel="noopener noreferrer"
+>
+
+
+  
+  
+
+    
+      
+    <span class="c-button__icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>
+  
+    
+
+    <span class="c-button__label">View</span>
+
+    
+
+  
+
+
+</a>
+
+      
+      
+    </div>
+  </div>
+
+</div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+  
+  <hr class="c-divider">
+  <section class="hdx-v2-dataset-section hdx-v2-dataset-section--collapsible"
+           id="activity">
+    <div class="hdx-v2-dataset-section__header"
+         role="button" tabindex="0"
+         aria-expanded="false" aria-controls="activity-body">
+      <h2 class="hdx-v2-dataset-section__title">Activity</h2>
+      <span class="hdx-v2-dataset-section__chevron" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
+    </div>
+    <div class="hdx-v2-dataset-section__body" id="activity-body">
+      <div class="dataset-activity-wrapper" data-fetched="false" data-dataset-id="07a6d6fb-828d-4391-afb8-78b1fc32caa3">
+        
+
+
+  
+    <p class="c-activity-stream__empty">No recent activity for this dataset.</p>
+  
+
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <span
+    id="notification_platform_data"
+    hidden
+    data-object-id="07a6d6fb-828d-4391-afb8-78b1fc32caa3"
+    data-object-name="wfp-food-prices-for-democratic-republic-of-the-congo"
+    data-object-type="dataset"
+    data-is-authenticated="False"
+  ></span>
+
+  
+  
+
+
+
+
+<div class="c-drawer" id="notificationsSignupDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="notificationsSignupDrawer-title">
+  <div class="c-drawer__overlay" data-drawer-close></div>
+  <div class="c-drawer__container" tabindex="-1">
+    <div class="c-drawer__header">
+      
+        <span class="c-drawer__title" id="notificationsSignupDrawer-title">Subscribe to notifications on this dataset</span>
+      
+      <button class="c-drawer__close" aria-label="Close" data-drawer-close>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body">
+      
+    
+
+
+
+
+
+
+<div class="c-drawer-form">
+
+  <p class="c-drawer-form__description">Would you like to receive notifications when resources (files) in this dataset change? <a href="https://docs.humdata.org/find/staying-up-to-date-with-hdx" target="_blank">Learn more</a> about notifications.</p>
+
+  
+    <p class="c-drawer-form__description">If so, please <a href="/sign-in" title="login">log in</a> or enter your email address below:</p>
+  
+
+  
+
+
+
+
+
+
+
+
+<div class="c-alert c-alert--error" role="alert" hidden>
+  <span class="c-alert__message"></span>
+  
+    <button type="button" class="c-alert__close" data-alert-close aria-label="Dismiss">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+  
+</div>
+
+  <form method="post" id="notification-platform-form" novalidate data-hdx-v2-form-validator>
+    <input type="hidden" name="popup_source" value="">
+
+    
+      <div class="c-form-field">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<label class="c-search-input__label" for="notification-email">
+  Your email address<span class="c-search-input__required" aria-hidden="true"> *</span>
+</label>
+
+<div class="c-search-input c-search-input--size-l"
+     >
+
+  
+    <input type="email"
+           name="email"
+           id="notification-email"
+           placeholder="Your email address"
+           value=""
+           autocomplete="new-email"
+           required="required"
+           data-validation="email" data-validation-error="Please enter a valid email address" >
+
+    
+  
+
+</div>
+<span class="c-search-input__error"></span>
+<ul class="c-form-validator__live-feedback" hidden></ul>
+        <div class="c-form-field__hint">
+          Already have an account? <a href="/sign-in" title="login">Log in</a>
+        </div>
+      </div>
+    
+
+    
+      <p class="c-drawer-form__update-freq">This dataset updates approximately: Every month</p>
+    
+
+    
+
+    
+      <div class="c-drawer-form__recaptcha">
+        <div class="g-recaptcha" data-sitekey="6Lcl60EUAAAAAE46a3XcPM2nPUKI2K4XZbcsorkR"></div>
+      </div>
+    
+
+  </form>
+
+</div>
+    <div class="c-drawer-form__buttons">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--tertiary c-button--size-m"
+  
+  
+  
+   data-drawer-close=""
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Cancel</span>
+
+    
+
+  
+
+
+</button>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--primary c-button--size-m"
+  
+  
+  
+   id="notificationsSignupButton"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Verify email address</span>
+
+    
+
+  
+
+
+</button>
+
+    </div>
+  
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+
+
+<div class="c-drawer" id="notificationsVerificationDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="notificationsVerificationDrawer-title">
+  <div class="c-drawer__overlay" data-drawer-close></div>
+  <div class="c-drawer__container" tabindex="-1">
+    <div class="c-drawer__header">
+      
+        <span class="c-drawer__title" id="notificationsVerificationDrawer-title">Verification email has been sent</span>
+      
+      <button class="c-drawer__close" aria-label="Close" data-drawer-close>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body">
+      
+    <div class="c-drawer-form">
+      
+
+
+
+
+
+
+
+
+<div class="c-alert c-alert--success" role="status">
+  <span class="c-alert__message">Please click the link in the email we have sent you to confirm your email address.</span>
+  
+    <button type="button" class="c-alert__close" data-alert-close aria-label="Dismiss">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+  
+</div>
+      <div class="c-drawer-form__buttons">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--primary c-button--size-m"
+  
+  
+  
+   data-drawer-close=""
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Close</span>
+
+    
+
+  
+
+
+</button>
+
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-drawer" id="notificationsUnsubscribeDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="notificationsUnsubscribeDrawer-title">
+  <div class="c-drawer__overlay" data-drawer-close></div>
+  <div class="c-drawer__container" tabindex="-1">
+    <div class="c-drawer__header">
+      
+        <span class="c-drawer__title" id="notificationsUnsubscribeDrawer-title">Unsubscribe</span>
+      
+      <button class="c-drawer__close" aria-label="Close" data-drawer-close>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body">
+      
+  <div class="c-drawer-form">
+    <p class="c-drawer-form__text">Please confirm that you want to unsubscribe from email notifications for updates to this dataset on HDX.</p>
+    
+
+
+
+
+
+
+
+
+<div class="c-alert c-alert--error" role="alert" hidden>
+  <span class="c-alert__message"></span>
+  
+    <button type="button" class="c-alert__close" data-alert-close aria-label="Dismiss">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+  
+</div>
+    <div class="c-drawer-form__buttons">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--tertiary c-button--size-m"
+  
+  
+  
+   data-drawer-close=""
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Cancel</span>
+
+    
+
+  
+
+
+</button>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--primary c-button--size-m"
+  
+  
+  
+   id="notificationsUnsubscribeButton" data-unsubscribe-token="" data-unsubscribe-token-validated="False" data-unsubscribe-email="" data-unsubscribe-token-invalidate="False" data-is-authenticated="False" data-object-id="07a6d6fb-828d-4391-afb8-78b1fc32caa3" data-object-type="dataset" data-object-name="wfp-food-prices-for-democratic-republic-of-the-congo"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Unsubscribe</span>
+
+    
+
+  
+
+
+</button>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="c-drawer" id="notificationsUnsubscribedDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="notificationsUnsubscribedDrawer-title">
+  <div class="c-drawer__overlay" data-drawer-close></div>
+  <div class="c-drawer__container" tabindex="-1">
+    <div class="c-drawer__header">
+      
+        <span class="c-drawer__title" id="notificationsUnsubscribedDrawer-title">You have unsubscribed</span>
+      
+      <button class="c-drawer__close" aria-label="Close" data-drawer-close>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body">
+      
+  <div class="c-drawer-form">
+    
+
+
+
+
+
+
+
+
+<div class="c-alert c-alert--success" role="status">
+  <span class="c-alert__message">You have successfully unsubscribed to dataset notifications.</span>
+  
+    <button type="button" class="c-alert__close" data-alert-close aria-label="Dismiss">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
+    </button>
+  
+</div>
+    <div class="c-drawer-form__buttons">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+  type="button"
+  class="c-button c-button--primary c-button--size-m"
+  
+  
+  
+   data-drawer-close=""
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Close</span>
+
+    
+
+  
+
+
+</button>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+  
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+
+          </div>
+        
+      </div>
+    </div>
+  
+    
+
+
+
+
+
+<footer class="hdx-v2-footer">
+  <div class="hdx-v2-container">
+
+  
+  <div class="hdx-v2-footer__top">
+
+    
+    <div class="hdx-v2-footer__branding">
+
+      <div class="hdx-v2-footer__logo-wrap">
+        <span class="hdx-v2-footer__logo" aria-label="HDX"><svg aria-hidden="true" focusable="false" viewBox="0 0 121 40" fill="none"><use href="/v2/icons/hdx.svg#i"/></svg></span>
+        <p class="hdx-v2-footer__tagline">Find, share and use humanitarian data all in one place</p>
+      </div>
+
+      
+      <div class="hdx-v2-footer__actions">
+        <div class="hdx-v2-footer__newsletter">
+          <p class="hdx-v2-footer__newsletter-label">Subscribe to our mailing list</p>
+          <div id="mc_embed_signup">
+            <form action="//humdata.us14.list-manage.com/subscribe/post?u=ea3f905d50ea939780139789d&amp;id=99796325d1" method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate" target="_blank" novalidate>
+              <div class="hdx-v2-footer__newsletter-row">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c-search-input c-search-input--size-m"
+     >
+
+  
+    <input type="email"
+           name="EMAIL"
+           id="mce-EMAIL"
+           placeholder="Enter your email"
+           value=""
+           autocomplete="off"
+           
+           >
+
+    
+  
+
+</div>
+<span class="c-search-input__error"></span>
+<ul class="c-form-validator__live-feedback" hidden></ul>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<button
+  type="submit"
+  class="c-button c-button--secondary c-button--size-m hdx-v2-footer__subscribe-btn"
+  
+  
+  
+   name="subscribe" id="mc-embedded-subscribe"
+>
+
+
+  
+  
+
+    
+
+    <span class="c-button__label">Subscribe</span>
+
+    
+
+  
+
+
+</button>
+
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+
+        <div class="hdx-v2-footer__social">
+          <a href="https://github.com/OCHA-DAP"
+             target="_blank" rel="noopener noreferrer"
+             class="hdx-v2-footer__social-link"
+             data-module="hdx_click_stopper"
+             data-module-link_type="footer">
+            <span class="hdx-v2-footer__social-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 19" fill="none"><use href="/v2/icons/github.svg#i"/></svg></span>
+            <span class="c-text-link c-text-link--primary c-text-link--size-s">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/company/ocha-centre-for-humanitarian-data"
+             target="_blank" rel="noopener noreferrer"
+             class="hdx-v2-footer__social-link"
+             data-module="hdx_click_stopper"
+             data-module-link_type="footer">
+            <span class="hdx-v2-footer__social-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 18 18" fill="none"><use href="/v2/icons/linkedin.svg#i"/></svg></span>
+            <span class="c-text-link c-text-link--primary c-text-link--size-s">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    
+    <nav class="hdx-v2-footer__nav" aria-label="Footer navigation">
+
+        
+        <div class="hdx-v2-footer__nav-col">
+          <p class="hdx-v2-footer__nav-heading">Data</p>
+          <ul class="hdx-v2-footer__nav-list">
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/dataset/"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer">Explore data</a>
+            </li>
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/group/"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer">Locations</a>
+            </li>
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/organization/"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer">Organisations</a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="hdx-v2-footer__nav-col">
+          <p class="hdx-v2-footer__nav-heading">Products</p>
+          <ul class="hdx-v2-footer__nav-list">
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/crisis-pages"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Crisis Pages</a>
+            </li>
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/dashboards/overview-of-data-grids"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Data Grids</a>
+            </li>
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/dataviz-gallery"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Dataviz Gallery</a>
+            </li>
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="https://docs.humdata.org/build/hdx-apis/hapi"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Humanitarian API</a>
+            </li>
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/signals"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Signals</a>
+            </li>
+            
+            <li>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="c-text-link c-text-link--primary c-text-link--size-s"
+   href="/dashboards/archived-datasets"
+   
+   
+   
+    data-module="hdx_click_stopper" data-module-link_type="footer" target="_self">Archived Datasets</a>
+            </li>
+            
+          </ul>
+        </div>
+
+        
+        <div class="hdx-v2-footer__nav-col">
+          <p class="hdx-v2-footer__nav-heading">Resources</p>
+          <ul class="hdx-v2-footer__nav-list">
+            <li>
+              <a href="https://docs.humdata.org/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Documentation
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.humdata.org/publish"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>QA Process
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/OCHA-DAP"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Open source
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.humdata.org/build"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Build with HDX
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.humdata.org/about/data-licenses"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Data Licenses
+              </a>
+            </li>
+            <li>
+              <a href="https://centre.humdata.org/category/blog/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Blog
+              </a>
+            </li>
+            <li>
+              <a href="https://centre.humdata.org/contact-us/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+                 data-module="hdx_click_stopper"
+                 data-module-link_type="footer">
+                <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
+
+  </div>
+
+  <hr class="c-divider hdx-v2-footer__divider">
+
+  
+  <div class="hdx-v2-footer__bottom">
+
+    <div class="hdx-v2-footer__service">
+      <p class="hdx-v2-footer__service-label">Service provided by</p>
+      <div class="hdx-v2-footer__service-detail">
+        <span class="hdx-v2-footer__ocha-logo" aria-label="OCHA"><svg aria-hidden="true" focusable="false" viewBox="0 0 149 37" fill="none"><use href="/v2/icons/ocha.svg#i"/></svg></span>
+        <p class="hdx-v2-footer__ocha-text">
+          OCHA coordinates the global emergency response to save lives and protect people in humanitarian
+          crises. We advocate for effective and principled humanitarian action by all, for all.
+        </p>
+      </div>
+    </div>
+
+    <div class="hdx-v2-footer__license">
+      <span class="hdx-v2-footer__license-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none"><use href="/v2/icons/creative-commons.svg#i"/></svg></span>
+      <p class="hdx-v2-footer__license-text">
+        Except where otherwise noted, content on this site is licensed under a
+        Creative Commons BY 4.0 International license.
+      </p>
+    </div>
+
+    <div class="hdx-v2-footer__legal">
+      <a href="https://docs.humdata.org/about/hdx-terms-of-service"
+         target="_blank" rel="noopener noreferrer"
+         class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+         data-module="hdx_click_stopper"
+         data-module-link_type="footer">
+        <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Terms of Service
+      </a>
+      <a href="https://docs.humdata.org/about/hdx-terms-of-service#privacy-notice"
+         target="_blank" rel="noopener noreferrer"
+         class="c-text-link c-text-link--primary c-text-link--size-s hdx-v2-footer__ext-link"
+         data-module="hdx_click_stopper"
+         data-module-link_type="footer">
+        <span class="hdx-v2-footer__ext-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/link-external.svg#i"/></svg></span>Privacy Policy
+      </a>
+    </div>
+
+  </div>
+
+  </div>
+</footer>
+  
+    
+  
+  
+  
+      
+      
+
+    
+  
+  
+
+  
+  
+  
+  
+
+
+      
+
+    
+    
+    <link href="/webassets/vendor/53df638c_fontawesome.css" rel="stylesheet"/>
+    <script src="/webassets/ckanext-hdx_theme/3b90b3c2_v2-components-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/c9b25913_notification-platform-util-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/2615ee4a_notification-platform-unsubscribe-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/97d099e7_v2-form-validator-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/c18b11f8_notification-platform-subscribe-scripts.js" type="text/javascript"></script>
+<script src="/base/vendor/jed.js" type="text/javascript"></script>
+<script src="/base/vendor/moment-with-locales.js" type="text/javascript"></script>
+<script src="/base/vendor/popperjs.js" type="text/javascript"></script>
+<script src="/base/vendor/purify.js" type="text/javascript"></script>
+<script src="/base/vendor/jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/240e5086_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/88c359cd_main.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/3e40bb01_ckan.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/68960de0_v2-search-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/f0df5947_v2-page-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/a9395134_v2-chart-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/8802f609_v2-dataset-page-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/3c416515_v2-quick-edit-scripts.js" type="text/javascript"></script>
+  </body>
+  
+  
+</html>
