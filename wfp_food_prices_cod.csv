@@ -139,12 +139,12 @@
   <meta charset="utf-8" />
 
       <meta name="csrf_field_name" content="_csrf_token" />
-      <meta name="_csrf_token" content="Ijc5NzNkM2NiNzBlZDE1N2RjNGJlOWFiN2UxNDcyODI3NjM1M2UxNDki.avrLKg.3kuOqDiWh9ARdw3nOwAPgwNMB5s" />
+      <meta name="_csrf_token" content="ImViYzYzMTMwYTNiOGNlYTZiZTY1MzNlM2YyODdlY2Q0NjgzNWRjNjMi.awQXqw.vOsUYEtnfdYqDiiDtL4X-tk9YHI" />
 
       <meta name="referrer" content="always">
       <meta name="generator" content="ckan " />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="hdx-version" content="v3.2.2">
+  <meta name="hdx-version" content="v3.3.1">
 
     <meta name="description" content="This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as... Access the Democratic Republic of the Congo - Food Prices dataset to support humanitarian efforts." />
 
@@ -254,51 +254,15 @@
             "schema:name": "Democratic Republic of the Congo - Markets"
         },
         {
-            "@id": "https://data.humdata.org/organization/wfp",
-            "@type": "schema:Organization",
-            "schema:contactPoint": [
-                {
-                    "@id": "_:Naff3bcd6cdc84219bb146bf3f38354ab"
-                },
-                {
-                    "@id": "_:Na6f7d09b62ed47de96e55761ca7f64ac"
-                }
-            ],
-            "schema:name": "WFP - World Food Programme",
-            "schema:sameAs": "https://dataviz.vam.wfp.org/"
-        },
-        {
-            "@id": "_:Naff3bcd6cdc84219bb146bf3f38354ab",
-            "@type": "schema:ContactPoint",
-            "schema:contactType": "customer service",
-            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
-            "schema:url": "https://data.humdata.org"
-        },
-        {
-            "@id": "_:Na6f7d09b62ed47de96e55761ca7f64ac",
-            "@type": "schema:ContactPoint",
-            "schema:contactType": "customer service",
-            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
-            "schema:url": "https://data.humdata.org"
-        },
-        {
-            "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a",
-            "@type": "schema:DataDownload",
-            "schema:contentUrl": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a/download/wfp_food_prices_cod.csv",
-            "schema:description": "Food prices data",
-            "schema:encodingFormat": "CSV",
-            "schema:name": "Democratic Republic of the Congo - Food Prices"
-        },
-        {
             "@id": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo",
             "@type": "schema:Dataset",
             "schema:about": {
-                "@id": "_:Nee20951d0b4e4937944880835a6544b3"
+                "@id": "_:Nd6693b9cd8814527a57a7b8c1d78864d"
             },
             "schema:creator": {
                 "@id": "https://data.humdata.org/organization/wfp"
             },
-            "schema:dateModified": "2026-11-15T08:44:21.663863",
+            "schema:dateModified": "2026-11-22T08:41:35.698975",
             "schema:datePublished": "2018-09-26T15:35:29.879457",
             "schema:description": "This dataset contains Food Prices data for Democratic Republic of the Congo, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as maize, rice, beans, fish, and sugar for 98 countries and some 3000 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.",
             "schema:distribution": [
@@ -311,14 +275,14 @@
             ],
             "schema:identifier": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo",
             "schema:includedInDataCatalog": {
-                "@id": "_:Nad7d9875d2024f52991d1d8a13a90554"
+                "@id": "_:N440e67b437dd497d942882ca64ea462e"
             },
             "schema:isAccessibleForFree": true,
             "schema:keywords": [
                 "crisis-ebola-bundibugyo-virus-disease",
-                "economics",
-                "markets",
                 "food security",
+                "markets",
+                "economics",
                 "indicators"
             ],
             "schema:license": "http://creativecommons.org/licenses/by/3.0/igo/legalcode",
@@ -331,17 +295,53 @@
             "schema:url": "https://data.humdata.org/dataset/wfp-food-prices-for-democratic-republic-of-the-congo"
         },
         {
-            "@id": "_:Nee20951d0b4e4937944880835a6544b3",
+            "@id": "_:Nd6693b9cd8814527a57a7b8c1d78864d",
             "@type": "schema:Thing",
             "schema:name": "cod",
             "schema:url": "https://data.humdata.org/group/cod"
         },
         {
-            "@id": "_:Nad7d9875d2024f52991d1d8a13a90554",
+            "@id": "_:N440e67b437dd497d942882ca64ea462e",
             "@type": "schema:DataCatalog",
             "schema:description": "",
             "schema:name": "Humanitarian Data Exchange",
             "schema:url": "https://data.humdata.org"
+        },
+        {
+            "@id": "https://data.humdata.org/organization/wfp",
+            "@type": "schema:Organization",
+            "schema:contactPoint": [
+                {
+                    "@id": "_:Nb4e487277b2949a3b711d78daf7f5083"
+                },
+                {
+                    "@id": "_:N123dee2e2bca496bae5e062d92f20832"
+                }
+            ],
+            "schema:name": "WFP - World Food Programme",
+            "schema:sameAs": "https://dataviz.vam.wfp.org/"
+        },
+        {
+            "@id": "_:Nb4e487277b2949a3b711d78daf7f5083",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
+            "schema:url": "https://data.humdata.org"
+        },
+        {
+            "@id": "_:N123dee2e2bca496bae5e062d92f20832",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:name": "f1921552-8c3e-47e9-9804-579b14a83ee3",
+            "schema:url": "https://data.humdata.org"
+        },
+        {
+            "@id": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a",
+            "@type": "schema:DataDownload",
+            "schema:contentUrl": "https://data.humdata.org/dataset/07a6d6fb-828d-4391-afb8-78b1fc32caa3/resource/c9906fd4-9947-450a-b816-682907463f2a/download/wfp_food_prices_cod.csv",
+            "schema:description": "Food prices data",
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Democratic Republic of the Congo - Food Prices"
         }
     ]
 }
@@ -351,9 +351,9 @@
     <link rel=preconnect href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link href="/webassets/ckanext-hdx_theme/1650c0bb_v2-components-styles.css" rel="stylesheet"/>
-<link href="/webassets/ckanext-hdx_theme/1b793184_v2-page-styles.css" rel="stylesheet"/>
-<link href="/webassets/ckanext-hdx_theme/c2ea7871_v2-dataset-page-styles.css" rel="stylesheet"/>
+    <link href="/webassets/ckanext-hdx_theme/55fbb39e_v2-components-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/063937de_v2-page-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/23748977_v2-dataset-page-styles.css" rel="stylesheet"/>
     
   </head>
 
@@ -420,6 +420,8 @@
 
     
       
+
+
 
 
 
@@ -747,8 +749,11 @@
 
 
 
-<a class="c-nav-item"
+
+
+<a class="c-nav-item c-nav-item--size-m c-nav-item--active"
    href="/dataset/"
+   aria-current="true"
    
     data-module="hdx_click_stopper" data-module-link_type="main nav">
 
@@ -778,8 +783,11 @@
 
 
 
-<a class="c-nav-item"
+
+
+<a class="c-nav-item c-nav-item--size-m"
    href="/group/"
+   
    
     data-module="hdx_click_stopper" data-module-link_type="main nav">
 
@@ -809,8 +817,11 @@
 
 
 
-<a class="c-nav-item"
+
+
+<a class="c-nav-item c-nav-item--size-m"
    href="/organization/"
+   
    
     data-module="hdx_click_stopper" data-module-link_type="main nav">
 
@@ -843,8 +854,11 @@
 
 
 
-<a class="c-nav-item"
+
+
+<a class="c-nav-item c-nav-item--size-m"
    href="#"
+   
    
     data-hdx-v2-panel="products" aria-expanded="false" aria-controls="hdx-v2-panel-products">
 
@@ -860,6 +874,7 @@
               <li>
                 <a href="/crisis-pages"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Crisis Pages
                 </a>
@@ -867,6 +882,7 @@
             
               <li>
                 <a href="/dashboards/overview-of-data-grids"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Data Grids
@@ -876,6 +892,7 @@
               <li>
                 <a href="/dataviz-gallery"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Dataviz Gallery
                 </a>
@@ -883,6 +900,7 @@
             
               <li>
                 <a href="https://docs.humdata.org/build/hdx-apis/hapi"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Humanitarian API
@@ -892,6 +910,7 @@
               <li>
                 <a href="/signals"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Signals
                 </a>
@@ -899,6 +918,7 @@
             
               <li>
                 <a href="/dashboards/archived-datasets"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Archived Datasets
@@ -1017,18 +1037,22 @@
         
         <nav class="hdx-v2-offcanvas__nav" aria-label="Mobile navigation">
           <a class="hdx-v2-offcanvas__nav-item" href="/"
+             
              data-module="hdx_click_stopper" data-module-link_type="main nav">
             Home
           </a>
           <a class="hdx-v2-offcanvas__nav-item" href="/dataset/"
+             aria-current="true"
              data-module="hdx_click_stopper" data-module-link_type="main nav">
             Data
           </a>
           <a class="hdx-v2-offcanvas__nav-item" href="/group/"
+             
              data-module="hdx_click_stopper" data-module-link_type="main nav">
             Locations
           </a>
           <a class="hdx-v2-offcanvas__nav-item" href="/organization/"
+             
              data-module="hdx_click_stopper" data-module-link_type="main nav">
             Organisations
           </a>
@@ -1038,6 +1062,7 @@
                   type="button"
                   aria-expanded="true"
                   aria-controls="offcanvas-products"
+                  
                   data-module="hdx_click_stopper" data-module-link_type="main nav">
             Products
             <span class="hdx-v2-offcanvas__expand-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/chevron-down.svg#i"/></svg></span>
@@ -1047,6 +1072,7 @@
               <li>
                 <a href="/crisis-pages"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Crisis Pages
                 </a>
@@ -1054,6 +1080,7 @@
             
               <li>
                 <a href="/dashboards/overview-of-data-grids"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Data Grids
@@ -1063,6 +1090,7 @@
               <li>
                 <a href="/dataviz-gallery"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Dataviz Gallery
                 </a>
@@ -1070,6 +1098,7 @@
             
               <li>
                 <a href="https://docs.humdata.org/build/hdx-apis/hapi"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Humanitarian API
@@ -1079,6 +1108,7 @@
               <li>
                 <a href="/signals"
                    
+                   
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Signals
                 </a>
@@ -1086,6 +1116,7 @@
             
               <li>
                 <a href="/dashboards/archived-datasets"
+                   
                    
                    data-module="hdx_click_stopper" data-module-link_type="main nav">
                   Archived Datasets
@@ -1526,6 +1557,7 @@
 
         
           
+          
           <div class="">
             
             
@@ -1608,12 +1640,15 @@
 
 
 
+
+
 <section class="c-page-header">
 
   
   <div class="c-page-header__top">
 
     <div class="c-page-header__left">
+      
       <div class="c-page-header__description">
 
         
@@ -1894,6 +1929,7 @@
 
       </div>
       
+      
 
       
       
@@ -2053,7 +2089,7 @@
         
           <div class="c-page-header__downloads">
             <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/trend-up.svg#i"/></svg>
-            <span>4500 downloads</span>
+            <span>4600 downloads</span>
           </div>
         
       </div>
@@ -3186,7 +3222,7 @@
   
     
 
-    <span class="c-button__label">Download (21.9K)</span>
+    <span class="c-button__label">Download (22.0K)</span>
 
     
 
@@ -3363,7 +3399,7 @@
 </div>
             </div>
             <span class="hdx-v2-dataset-metadata__value">
-              04 November 2026
+              22 November 2026
             </span>
           </div>
 
@@ -4055,7 +4091,7 @@
         
           <div class="hdx-v2-dataset-metadata__full hdx-v2-dataset-metadata__downloads">
             <div id="dataset-downloads-data" class="d-none">
-              [{&#34;value&#34;: 8, &#34;date&#34;: &#34;2026-05-25&#34;}, {&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-01&#34;}, {&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-08&#34;}, {&#34;value&#34;: 13, &#34;date&#34;: &#34;2026-06-15&#34;}, {&#34;value&#34;: 22, &#34;date&#34;: &#34;2026-06-22&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-06-29&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-07-06&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-13&#34;}, {&#34;value&#34;: 31, &#34;date&#34;: &#34;2026-07-20&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-27&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-03&#34;}, {&#34;value&#34;: 44, &#34;date&#34;: &#34;2026-08-10&#34;}, {&#34;value&#34;: 50, &#34;date&#34;: &#34;2026-08-17&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-24&#34;}, {&#34;value&#34;: 68, &#34;date&#34;: &#34;2026-08-31&#34;}, {&#34;value&#34;: 62, &#34;date&#34;: &#34;2026-09-07&#34;}, {&#34;value&#34;: 79, &#34;date&#34;: &#34;2026-09-14&#34;}, {&#34;value&#34;: 66, &#34;date&#34;: &#34;2026-09-21&#34;}, {&#34;value&#34;: 92, &#34;date&#34;: &#34;2026-09-28&#34;}, {&#34;value&#34;: 154, &#34;date&#34;: &#34;2026-10-05&#34;}, {&#34;value&#34;: 145, &#34;date&#34;: &#34;2026-10-12&#34;}, {&#34;value&#34;: 161, &#34;date&#34;: &#34;2026-10-19&#34;}, {&#34;value&#34;: 169, &#34;date&#34;: &#34;2026-10-26&#34;}, {&#34;value&#34;: 108, &#34;date&#34;: &#34;2026-11-02&#34;}, {&#34;value&#34;: 225, &#34;date&#34;: &#34;2026-11-09&#34;}]
+              [{&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-01&#34;}, {&#34;value&#34;: 14, &#34;date&#34;: &#34;2026-06-08&#34;}, {&#34;value&#34;: 13, &#34;date&#34;: &#34;2026-06-15&#34;}, {&#34;value&#34;: 22, &#34;date&#34;: &#34;2026-06-22&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-06-29&#34;}, {&#34;value&#34;: 25, &#34;date&#34;: &#34;2026-07-06&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-13&#34;}, {&#34;value&#34;: 31, &#34;date&#34;: &#34;2026-07-20&#34;}, {&#34;value&#34;: 29, &#34;date&#34;: &#34;2026-07-27&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-03&#34;}, {&#34;value&#34;: 44, &#34;date&#34;: &#34;2026-08-10&#34;}, {&#34;value&#34;: 50, &#34;date&#34;: &#34;2026-08-17&#34;}, {&#34;value&#34;: 38, &#34;date&#34;: &#34;2026-08-24&#34;}, {&#34;value&#34;: 68, &#34;date&#34;: &#34;2026-08-31&#34;}, {&#34;value&#34;: 62, &#34;date&#34;: &#34;2026-09-07&#34;}, {&#34;value&#34;: 79, &#34;date&#34;: &#34;2026-09-14&#34;}, {&#34;value&#34;: 66, &#34;date&#34;: &#34;2026-09-21&#34;}, {&#34;value&#34;: 92, &#34;date&#34;: &#34;2026-09-28&#34;}, {&#34;value&#34;: 154, &#34;date&#34;: &#34;2026-10-05&#34;}, {&#34;value&#34;: 145, &#34;date&#34;: &#34;2026-10-12&#34;}, {&#34;value&#34;: 161, &#34;date&#34;: &#34;2026-10-19&#34;}, {&#34;value&#34;: 169, &#34;date&#34;: &#34;2026-10-26&#34;}, {&#34;value&#34;: 108, &#34;date&#34;: &#34;2026-11-02&#34;}, {&#34;value&#34;: 225, &#34;date&#34;: &#34;2026-11-09&#34;}, {&#34;value&#34;: 228, &#34;date&#34;: &#34;2026-11-16&#34;}]
             </div>
             <span class="hdx-v2-dataset-metadata__label">Downloads</span>
             <div id="dataset-downloads-chart">
@@ -4254,6 +4290,10 @@
         
 
 
+
+
+
+
   
     <p class="c-activity-stream__empty">No recent activity for this dataset.</p>
   
@@ -4272,6 +4312,9 @@
 
 
 
+
+
+  
   
   
 
@@ -4281,7 +4324,6 @@
   
 
   
-    
     
   
 
@@ -4389,11 +4431,18 @@
 
 
 
+
+
+
+
+
 <label class="c-search-input__label" for="notification-email">
   Your email address<span class="c-search-input__required" aria-hidden="true"> *</span>
 </label>
 
+
 <div class="c-search-input c-search-input--size-l"
+     
      >
 
   
@@ -4410,6 +4459,8 @@
   
 
 </div>
+
+
 <span class="c-search-input__error"></span>
 <ul class="c-form-validator__live-feedback" hidden></ul>
         <div class="c-form-field__hint">
@@ -4678,12 +4729,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div class="c-drawer" id="notificationsUnsubscribeDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="notificationsUnsubscribeDrawer-title">
   <div class="c-drawer__overlay" data-drawer-close></div>
   <div class="c-drawer__container" tabindex="-1">
     <div class="c-drawer__header">
       
-        <span class="c-drawer__title" id="notificationsUnsubscribeDrawer-title">Unsubscribe</span>
+        <span class="c-drawer__title" id="notificationsUnsubscribeDrawer-title">Unsubscribe from this dataset?</span>
       
       <button class="c-drawer__close" aria-label="Close" data-drawer-close>
         <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none"><use href="/v2/icons/close.svg#i"/></svg>
@@ -4692,7 +4753,7 @@
     <div class="c-drawer__body">
       
   <div class="c-drawer-form">
-    <p class="c-drawer-form__text">Please confirm that you want to unsubscribe from email notifications for updates to this dataset on HDX.</p>
+    <p class="c-drawer-form__text">Please confirm that you want to unsubscribe from email notifications for updates to Democratic Republic of the Congo - Food Prices on HDX.</p>
     
 
 
@@ -4950,6 +5011,7 @@
 
 
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -5020,7 +5082,14 @@
 
 
 
+
+
+
+
+
+
 <div class="c-search-input c-search-input--size-m"
+     
      >
 
   
@@ -5037,6 +5106,8 @@
   
 
 </div>
+
+
 <span class="c-search-input__error"></span>
 <ul class="c-form-validator__live-feedback" hidden></ul>
                 
@@ -5536,10 +5607,10 @@
     
     
     <link href="/webassets/vendor/53df638c_fontawesome.css" rel="stylesheet"/>
-    <script src="/webassets/ckanext-hdx_theme/3b90b3c2_v2-components-scripts.js" type="text/javascript"></script>
+    <script src="/webassets/ckanext-hdx_theme/d0c984e4_v2-components-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/c9b25913_notification-platform-util-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/2615ee4a_notification-platform-unsubscribe-scripts.js" type="text/javascript"></script>
-<script src="/webassets/ckanext-hdx_theme/97d099e7_v2-form-validator-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/b9afef41_v2-form-validator-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/c18b11f8_notification-platform-subscribe-scripts.js" type="text/javascript"></script>
 <script src="/base/vendor/jed.js" type="text/javascript"></script>
 <script src="/base/vendor/moment-with-locales.js" type="text/javascript"></script>
@@ -5550,8 +5621,8 @@
 <script src="/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript"></script>
 <script src="/webassets/base/88c359cd_main.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/3e40bb01_ckan.js" type="text/javascript"></script>
-<script src="/webassets/ckanext-hdx_theme/68960de0_v2-search-scripts.js" type="text/javascript"></script>
-<script src="/webassets/ckanext-hdx_theme/f0df5947_v2-page-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/1846769a_v2-search-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/c2cf2273_v2-page-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/a9395134_v2-chart-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/8802f609_v2-dataset-page-scripts.js" type="text/javascript"></script>
 <script src="/webassets/ckanext-hdx_theme/3c416515_v2-quick-edit-scripts.js" type="text/javascript"></script>
