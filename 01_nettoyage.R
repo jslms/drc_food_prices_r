@@ -17,7 +17,7 @@ df_clean <- df %>%
     filter(province == "Kinshasa") %>% 
     filter(!is.na(prix), prix > 0)
 
-# Mettre les colonnes renommees en premier
+# Mettre les colonnes renommees en premier 
 df_clean <- df_clean %>% 
     relocate(province,
              marche,
