@@ -3,7 +3,7 @@ library(tidyverse)
 library(lubridate)
 
 # 2. Importer les donnees
-df <- read_csv("wfp_food_prices_cod.csv")
+df <- read_csv("./datasets/wfp_food_prices_cod.csv")
 
 # 3. Nettoyer et filtrer pour Kinshasa
 df_clean <- df %>% 
@@ -11,19 +11,25 @@ df_clean <- df %>%
         province = admin1,
         marche = market,
         produit = commodity,
-        prix = price,
-        devise = currency
+        prix_cdf = price,
+        prix_usd = usdprice,
+        devise = currency,
+        unite_mesure = unit
+        
     ) %>% 
-    filter(province == "Kinshasa") %>% 
-    filter(!is.na(prix), prix > 0)
+    filter(province == "Kinshasa", pricetype == "Retail") %>% 
+    filter(!is.na(prix_cdf), prix_cdf > 0)
 
 # Mettre les colonnes renommees en premier 
 df_clean <- df_clean %>% 
     relocate(province,
              marche,
              produit,
-             prix,
-             devise)
+             prix_cdf,
+             prix_usd,
+             devise,
+             unite_mesure
+             )
 
 # Verifier le resultat
 glimpse(df_clean)
